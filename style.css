@@ -1,0 +1,120 @@
+/* Algemene kleuren */
+:root {
+    --licht-blauw-grijs: #647E9C;
+    --blauw: #5694DB;
+    --donker-grijs: #52565C;
+    --achtergrond-kleur: #f4f7fa;
+}
+
+/* Algemene stijlen */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--achtergrond-kleur);
+    color: var(--donker-grijs);
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: var(--licht-blauw-grijs);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Contact sectie */
+.contact-section {
+    background-color: white;
+    border: 1px solid var(--licht-blauw-grijs);
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    color: var(--blauw);
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: var(--blauw);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Contactformulier */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    text-align: left;
+    font-weight: bold;
+    color: var(--donker-grijs);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--licht-blauw-grijs);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--blauw);
+}
+
+.contact-form button {
+    background-color: var(--blauw);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: var(--licht-blauw-grijs);
+}
+
+/* Footer */
+.site-footer {
+    background-color: var(--donker-grijs);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Responsive weergave voor mobiele apparaten */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 15px;
+    }
+}
